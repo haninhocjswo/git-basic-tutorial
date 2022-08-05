@@ -1,0 +1,36 @@
+1. github 회원가입
+2. github repository 생성
+3. git 다운로드 및 설치
+4. git bash 실행
+5. git config --global user.name "내이름" 입력
+6. git config --global user.email "내이메일" 입력 <-- 내 이메일은 깃허브 가입 시 입력한 이메일 입력
+7. 내가 설정한 정보가 잘 들어갔나 확인 
+- git config --list 입력
+- 나온 정보에서 user.name과 user.email 잘 들어갔나 확인
+8. git hub repository에 처음으로 프로젝트 올릴 때
+git bash에서 내가 git hub와 연결할 프로젝트 폴더로 이동
+git init 입력
+9. git 추가
+git add . => .은 전부 다라는 뜻 즉, 현재위치에 있는 모든 파일을 추가하겠다.
+
+만약 내가 원하는 파일만 올리고 싶다면
+git add 파일명
+
+ex) 현재위치에 index.html과 login.html 두 개의 파일이 있을 때 login.html만 올리고 싶다.
+git add login.html
+10. 내가 현재 올린 파일들을 보고 싶다.
+git status 
+11. 히스토리 만들기 커밋 시 메시지
+git commit -m "히스토리메시지"
+ex) git commit -m "project first commit"
+12. 로컬프로젝트랑 git hub repository와 연결하기
+
+git remote add origin https://github.com/haninhocjswo/(repository명)
+
+ex) git remote add origin https://github.com/haninhocjswo/git-basic-tutorial.git
+
+* git hub repository 생성 후 나오는 화면에 내 repository와 연결하는 명령어 있음
+13. 로컬프로젝트와 git hub repository 연결되었는지 확인
+git remote -v
+14. git hub로 push하기
+git push origin master
