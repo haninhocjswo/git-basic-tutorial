@@ -74,6 +74,8 @@ ex) git clone https://github.com/haninhocjswo/git-basic-tutorial.git
 
 git pull origin master
 
+******pull을 하기 전에 commit을 해놓아야한다. 안그러면 덮어씌워져서 내가 수정했던 부분이 사라진다.
+
 
 ---------------------------------------------------협업하는 팀원(프로젝트 깃허브로 업로드할 때)---------------------------------------------
 
